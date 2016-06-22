@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="container" id="homepage">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron text-center">
+        <h1>How's the serenity?!</h1>
+        <p>{{ site.description }}</p>
+        <a class="btn btn-lg" href="https://github.com/samjamead/bootstrappedjekyll" />View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h2>The (very) quick start guide</h2>
+      <p>Fork the <a href="https://github.com/samjamead/bootstrappedjekyll">repo</a> in Github, clone, and away you go!</p>
+      <hr />
+      <h2>So, what's going on here?</h2>
+      <p>A static site pre-styled with Bootstrap 3.3.6 &mdash; no offence meant to the guys at Jekyll, but we got rid of most of their style.</p>
+      <hr />
+      <h2>A couple things we do differently</h2>
+      <ul>
+        <li>No helper class required on <code>.btn</code> &mdash; brand colours applied by default!).</li>
+        <li>From time to time, we use inline styles. If it's good enough for JavaScript, it's good enough for us!</li>
+      </ul>
+
+      <hr />
+
+      <h2>A list of posts</h2>
+
+      <ul class="list unstyled">
+        {% for post in site.posts %}
+          <li><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> &mdash; posted on {{ post.date | date: "%b %-d, %Y" }}</li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+// =======================================
+//  Some classes are used globally, and
+//  that's ok!
+// =======================================
+
+.btn {
+  color: #fff;
+  background-color: $brand-color;
+  border-color: $brand-color;
+  transition: 0.4s ease;
+  &:hover {
+    background-color: darken($brand-color, 10%);
+  }
+}

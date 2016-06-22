@@ -1,0 +1,19 @@
+// =======================================
+//  Footer
+//  Mmmmmm... Sticky. Don't forget to
+//  include scripts.js for dynamic sizing
+// =======================================
+
+$footer-bg-color:  #29272a;
+$footer-color:     #e4e4e4;
+
+.site-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: $footer-bg-color;
+  color: $footer-color;
+  padding-top: $spacing-unit * 2;
+  padding-bottom: $spacing-unit * 2;
+}
