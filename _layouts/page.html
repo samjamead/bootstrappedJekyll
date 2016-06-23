@@ -3,19 +3,7 @@ layout: default
 ---
 <div id="pageWrapper" >
   <div class="container">
-
-    {% if page.img %}
-      <div class="row">
-        <div class="col-sm-12" id="pageHero" style="background-image: url('{{ page.img | prepend: site.github.url }}'); background-position: {{ page.img-align }}">
-
-        </div>
-      </div>
-    {% endif %}
-
     <div class="row">
-
-
-
       <div class="col-md-6">
 
         <article class="page">
@@ -30,17 +18,6 @@ layout: default
 
         </article>
 
-      </div>
-
-      <div class="col-md-6">
-        {% if page.exampleProp1 %}
-          <h3>{{ page.exampleProp1 }}</h3>
-          <p>{{ page.exampleProp2 }}</p>
-          <ul>
-            <li>{{ page.examplePropList.[0] }}</li>
-            <li>{{ page.examplePropList.[1] }}</li>
-          </ul>
-        {% endif %}
       </div>
 
     </div>

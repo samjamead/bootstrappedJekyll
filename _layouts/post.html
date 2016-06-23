@@ -7,7 +7,10 @@ layout: default
 
     {% if post.img %}
       <div class="row">
-        <div class="col-sm-12" id="pageHero" style="background-image: url('{{ page.img }}');">
+        <div class="col-sm-12">
+          <div id="postHero" style="background-image: url('{{ page.img }}');">
+            <!-- Image appears here! -->
+          </div>
         </div>
       </div>
     {% endif %}

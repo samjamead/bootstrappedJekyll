@@ -1,0 +1,32 @@
+---
+layout: default
+title: Posts
+permalink: /posts
+menu: main
+---
+<div id="pageWrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-unstyled">
+          {% for post in site.posts %}
+            <li>
+              <a class="fancy-list" href="{{ post.url | prepend: site.github.url }}">
+                {% if post.img %}
+                  <div class="list-img" style="background-image: url('{{ post.img | prepend: site.github.url }}');"></div>
+                {% endif %}
+                <div class="list-meta">
+                  <p>
+                    {{ post.title }}
+                    <br />
+                    Posted on {{ post.date | date: "%b %-d, %Y" }}
+                  </p>
+                </div>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

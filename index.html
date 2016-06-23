@@ -14,16 +14,21 @@ layout: default
   </div>
 
   <div class="row">
-    <div class="col-md-6">
-
-      <h2>A list of posts</h2>
-
-      <ul class="list unstyled">
-        {% for post in site.posts %}
-          <li><a class="post-link" href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a> &mdash; posted on {{ post.date | date: "%b %-d, %Y" }}</li>
-        {% endfor %}
-      </ul>
-
-    </div>
+    {% for post in site.posts %}
+      <div class="col-md-4">
+        <a class="fancy-list" href="{{ post.url | prepend: site.github.url }}">
+          {% if post.img %}
+            <div class="list-img" style="background-image: url('{{ post.img | prepend: site.github.url }}');"></div>
+          {% endif %}
+          <div class="list-meta">
+            <p>
+              {{ post.title }}
+              <br />
+              Posted on {{ post.date | date: "%b %-d, %Y" }}
+            </p>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
   </div>
 </div>
