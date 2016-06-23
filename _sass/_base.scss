@@ -45,13 +45,13 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: darken($brand-color, 10%);
+        color: $hover-color;
         text-decoration: underline;
     }
 }
 blockquote {
     color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    border-left: 4px solid $light-grey;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -87,7 +87,7 @@ li {
 pre,
 code {
   font-size: 15px;
-  border: 1px solid $grey-color-light;
+  border: 1px solid $light-grey;
   border-radius: 3px;
   background-color: #eef;
 }

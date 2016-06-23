@@ -4,7 +4,8 @@
 
 .navbar {
   border-radius: 0;
-  border-bottom: 1px solid #29272a;
+  border: 0;
+  border-bottom: $border;
   margin-bottom: 0;
 }
 .navbar-brand {
@@ -12,8 +13,16 @@
 }
 .navbar-nav {
   li {
+    border-left: $border;
     a {
       font-size: 1rem;
+      &:hover {
+        color: #fff;
+        background: $hover-color;
+      }
+    }
+    &:last-child {
+      border-right: $border;
     }
   }
 }

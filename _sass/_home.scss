@@ -5,3 +5,10 @@
   padding-top: $spacing-unit;
   padding-bottom: $spacing-unit * 2;
 }
+.jumbotron {
+  background: #fff;
+  border: $border;
+  h1 {
+    color: $brand-color;
+  }
+}
