@@ -22,7 +22,7 @@ Or a list of posts:
 <ul class="list-unstyled">
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a>
       (posted on {{ post.date | date: "%b %-d, %Y" }})
     </li>
   {% endfor %}
