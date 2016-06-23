@@ -16,10 +16,13 @@ ul, ol, dl, figure,
 // =======================================
 //  Elements
 // =======================================
+html, body {
+  font-size: $base-font-size;
+}
 html {
   position: relative;
   min-height: 100%;
-  font-size: $base-font-size;
+
 }
 body {
   font-family: $base-font-family;
@@ -41,12 +44,8 @@ a {
     color: $brand-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
     &:hover {
-        color: $text-color;
+        color: darken($brand-color, 10%);
         text-decoration: underline;
     }
 }

@@ -13,6 +13,7 @@ function stickyFooter() {
   $("body").css("margin-bottom", bodyBottomMargin);
   console.log(bodyBottomMargin);
 }
+
 stickyFooter();
 
 // Trigger sizing functions on window is resize

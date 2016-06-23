@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Examples
-permalink: /examples
+title: Opinions
+permalink: /opinions
 menu: main
 ---
 

@@ -2,5 +2,6 @@
 //  Post SASS
 // =======================================
 #postWrapper {
-  padding: ($spacing-unit * 2) 0;
+  padding-top: $spacing-unit;
+  padding-bottom: ($spacing-unit * 2);
 }

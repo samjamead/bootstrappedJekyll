@@ -1,8 +1,19 @@
 // =======================================
 //  Header SASS
 // =======================================
+
 .navbar {
   border-radius: 0;
   border-bottom: 1px solid #29272a;
   margin-bottom: 0;
+}
+.navbar-brand {
+  font-size: 1.2rem;
+}
+.navbar-nav {
+  li {
+    a {
+      font-size: 1rem;
+    }
+  }
 }

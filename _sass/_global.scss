@@ -9,6 +9,7 @@
   border-color: $brand-color;
   transition: 0.4s ease;
   &:hover {
+    color: #fff;
     background-color: darken($brand-color, 10%);
   }
 }

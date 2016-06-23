@@ -13,12 +13,11 @@ img-align: top
 
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+### So, what's going on here?
+A Jekyll static site starter kit pre-styled with Bootstrap 3.3.6 &mdash; no offence meant to the guys at Jekyll, but we got rid of most of their style.
 
-You can find the source code for the Jekyll new theme at:
- /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Bootstrapped Jekyll is designed to be three different things:
 
-You can find the source code for Jekyll at
- /
-[jekyll](https://github.com/jekyll/jekyll)
+1. A place for me to start when building a website for a new project (designed to eliminate a lot of repetitive tasks I find myself doing)
+2. A starter kit for anyone wanting to use Jekyll with Bootstrap
+3. A psuedo tutorial for beginner web developers interested in Jekyll
