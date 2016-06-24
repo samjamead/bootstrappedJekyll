@@ -7,26 +7,31 @@ menu: main
 <div id="pageWrapper">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <ul class="list-unstyled">
-          {% for post in site.posts %}
-            <li>
-              <a class="fancy-list" href="{{ post.url | prepend: site.github.url }}">
-                {% if post.img %}
-                  <div class="list-img" style="background-image: url('{{ post.img | prepend: site.github.url }}');"></div>
-                {% endif %}
-                <div class="list-meta">
-                  <p>
-                    {{ post.title }}
-                    <br />
-                    Posted on {{ post.date | date: "%b %-d, %Y" }}
-                  </p>
-                </div>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
+      <div class="col-md-12">
+        <h1>All The Posts</h1>
+        <hr />
       </div>
+    </div>
+    <div class="row clearfix-3">
+      {% for post in site.posts %}
+        <div class="col-md-4">
+          <a class="fancy-list" href="{{ post.url | prepend: site.github.url }}">
+            <div class="list-img"
+                 {% if post.img %}
+                   style="background-image: url('{{ post.img | prepend: site.github.url }}');"
+                 {% endif %}>
+            </div>
+            <div class="list-meta">
+              <p>
+                {{ post.title }}
+                <br />
+                Posted on {{ post.date | date: "%b %-d, %Y" }}
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="clear"></div>
+      {% endfor %}
     </div>
   </div>
 </div>

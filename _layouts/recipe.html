@@ -7,7 +7,7 @@ layout: default
     {% if page.img %}
       <div class="row">
         <div class="col-sm-12">
-          <div id="postHero" style="background-image: url('{{ page.img }}');">
+          <div id="postHero" style="background-image: url('{{ page.img | prepend: site.github.url }}');">
             <!-- Image appears here! -->
           </div>
         </div>

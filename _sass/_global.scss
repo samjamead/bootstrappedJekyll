@@ -14,7 +14,6 @@
     background-color: $hover-color;
   }
 }
-
 .fancy-list {
   display: block;
   border: $border;
@@ -25,6 +24,7 @@
     border-color: $brand-color;
   }
   .list-img {
+    background-image: url('../img/asanoha-400px.png');
     background-position: center;
     background-size: cover;
     height: 200px;
@@ -35,4 +35,11 @@
       margin-bottom: 0;
     }
   }
+}
+.clearfix-3 {
+  .clear:nth-child(3n+3)::before {
+      content: '';
+      display: table;
+      clear: both;
+    }
 }

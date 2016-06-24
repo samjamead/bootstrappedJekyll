@@ -13,7 +13,7 @@ preptime: "15 minutes"
 cooktime: "20 minutes"
 serves: "20 Brownies"
 
-img: /img/cyclists.jpg
+img: /img/chocolate-brownies.jpg
 
 ---
 This chocolate brownie recipe is so, so good.

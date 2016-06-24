@@ -13,13 +13,15 @@ layout: default
     </div>
   </div>
 
-  <div class="row">
+  <div class="row clearfix-3">
     {% for post in site.posts %}
       <div class="col-md-4">
         <a class="fancy-list" href="{{ post.url | prepend: site.github.url }}">
-          {% if post.img %}
-            <div class="list-img" style="background-image: url('{{ post.img | prepend: site.github.url }}');"></div>
-          {% endif %}
+          <div class="list-img"
+               {% if post.img %}
+                 style="background-image: url('{{ post.img | prepend: site.github.url }}');"
+               {% endif %}>
+          </div>
           <div class="list-meta">
             <p>
               {{ post.title }}
@@ -29,6 +31,7 @@ layout: default
           </div>
         </a>
       </div>
+      <div class="clear"></div>
     {% endfor %}
   </div>
 </div>

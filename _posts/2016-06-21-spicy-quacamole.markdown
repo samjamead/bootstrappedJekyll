@@ -11,7 +11,7 @@ description: "Chunky, fresh, with a little bit of zing."
 ingredients: ['2 Avocados', '1/2 Red onion', '1 Red chilli', '1 Lime']
 preptime: "15 minutes"
 
-img: /img/yosemite3.jpg
+img: /img/guacamole.png
 
 ---
 You'll want to have some chips handy as soon as you're finished, and if you're entertaining guests, it's probably best to make two batches.
