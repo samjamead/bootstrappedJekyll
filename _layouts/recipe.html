@@ -63,5 +63,19 @@ layout: default
 
 
     </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr />
+        <p>Read next:
+          {% if page.previous %}
+            <a class="" rel="prev" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+          {% elsif page.next %}
+            <a class="" rel="next" href="{{ page.next.url }}">{{ page.next.title }}</a>
+          {% else %}
+            This is the only post! <a href="mailto:{{ site.email }}" target="_blank">Email the author</a> and tell them to get on with more.
+          {% endif %}
+        </p>
+      </div>
+    </div>
   </div>
 </div>

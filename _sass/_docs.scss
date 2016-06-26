@@ -1,0 +1,35 @@
+// =======================================
+//  Docs SASS
+// =======================================
+.affix {
+  top: 50px;
+  z-index: 5;
+}
+section {
+  padding: 50px 0px;
+  border-bottom: $border;
+  &:first-child {
+    // Don't change padding; it's needed to make things line up nicely
+    // when navigating with the sidebar.
+    margin-top: -50px;
+  }
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+#docs-side-nav {
+  a {
+    i {
+      color: $brand-color;
+      margin-top: 5px;
+      font-size: 1.2rem;
+      padding-right: 10px;
+      transition: 0.4s ease;
+    }
+    &:hover {
+      i {
+        padding: 0px;
+      }
+    }
+  }
+}
