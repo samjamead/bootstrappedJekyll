@@ -35,9 +35,9 @@ layout: default
       <hr />
       <p>
         {% if page.next %}
-          Read next: <a class="" rel="next" href="{{ page.next.url }}">{{ page.next.title }}</a>
+          Read next: <a class="" rel="next" href="{{ site.github.url }}/{{ page.next.url }}">{{ page.next.title }}</a>
         {% elsif page.previous %}
-          Read next: <a class="" rel="prev" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+          Read next: <a class="" rel="prev" href="{{ site.github.url }}/{{ page.previous.url }}">{{ page.previous.title }}</a>
         {% else %}
           Read next: This is the only post! <a href="mailto:{{ site.email }}" target="_blank">Email the author</a> and tell them to get on with more.
         {% endif %}
