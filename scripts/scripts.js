@@ -1,13 +1,11 @@
 
 // Add active class to relevant nav item
-$(document).ready(function () {
-  if(window.location.href.indexOf("about") > -1) {
-    $('#navAbout').addClass("active");
-  } else if(window.location.href.indexOf("docs") > -1) {
-    $('#navDocs').addClass("active");
-  } else if(window.location.href.indexOf("posts") > -1) {
-    $('#navPosts').addClass("active");
-  }
+$(function () {
+  $('.navbar-nav > li > a').each(function(){
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('active');
+    }
+  });
 });
 
 // Add target="_blank" to all external links
